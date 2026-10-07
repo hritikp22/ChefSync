@@ -1,0 +1,73 @@
+name: chefsync
+description: "ChefSync - Premium AI Cooking Assistant and Recipe Tracker."
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Typography
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.1.0
+  animations: ^2.0.11
+
+  # Gestures & Interaction (60fps Checklist Swipe)
+  flutter_slidable: ^3.1.0
+
+  # 3D Model Rendering for Interactive Cooking Pot
+  model_viewer_plus: ^1.7.0
+
+  # Hardware & Image Selection for Plating Showcase
+  image_picker: ^1.0.7
+
+  # Glassmorphism & Visual Polish
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+
+  # State Management
+  provider: ^6.1.1
+
+  # Networking & HTTP (POST /recipe generation)
+  http: ^1.2.0
+
+  # Firebase Integrations (Auth & Storage Placeholders)
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.8
+  firebase_storage: ^11.6.9
+  cloud_firestore: ^4.15.8
+  google_generative_ai: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/
+    - assets/images/
+    - assets/icons/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+
+flutter_native_splash:
+  color: "#0A0D14"
+  image: "assets/images/app_icon.png"
+  android: true
+  ios: true
+  android_12:
+    color: "#0A0D14"
+    image: "assets/images/app_icon.png"
